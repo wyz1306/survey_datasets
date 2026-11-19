@@ -68,9 +68,9 @@ Each `Datas/<Dataset>/eval/` folder contains five files, reproduced by the scrip
 tagger (spaCy for English, LTP for Chinese) and is provided for reference rather than as a
 dependency-free reproduction target.
 
-The same folder also holds the per-split files written by that dataset's own loader
-(`*_output.json`, or `*_data.json` for SNIPS, MCID and StackOverflow). These are the direct
-inputs to `utils/merge.py`; the five files above are derived from them.
+`<dataset>_merge_output.json` is the consolidated form of the per-split files that the dataset's
+own loader writes. Those per-split files are not included, since step 1 below regenerates them;
+what is kept here is the consolidated corpus that the analysis scripts read.
 
 ## Running the analysis
 
@@ -80,7 +80,6 @@ last two produce the statistics and the figure.
 ```bash
 # 1. Loader: reads the release and writes batched JSON into that dataset's eval/ folder.
 #    Run it from inside the dataset folder, e.g. Datas/Banking/banking.py
-#    Its output is already in the repository, so this step is only needed to regenerate it.
 
 # 2. Merge the batches into a single corpus file.
 python utils/merge.py
@@ -131,8 +130,10 @@ were made before release, neither of which alters any computation:
 - The call at the end of `utils/merge.py` is guarded by `if __name__ == '__main__':`, so the
   module can be imported without executing a merge.
 
-The per-split files written by the loaders are included, so the merge and the statistics can be
-recomputed without re-running the loaders. Running a loader again simply overwrites them.
+The per-split files written by the loaders are not included; step 1 regenerates them and step 2
+consumes them. What the repository keeps is the consolidated corpus that the statistics are
+computed from. Their paths are listed in `.gitignore`, so running a loader leaves the working
+tree clean.
 
 ## Scope
 

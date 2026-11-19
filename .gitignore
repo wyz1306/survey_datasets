@@ -6,3 +6,14 @@ __MACOSX/
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
+
+# Per-split outputs written by the per-dataset loaders. They are large and
+# regenerable from the corpora in Datas/, so they stay out of the repository;
+# the consolidated <dataset>_merge_output.json that the analysis reads is kept.
+Datas/*/eval/train_output*.json
+Datas/*/eval/test_output*.json
+Datas/*/eval/validation_output*.json
+Datas/*/eval/eval_output_data.json
+Datas/*/eval/train_data.json
+Datas/*/eval/test_data.json
+Datas/*/eval/output_data.json
