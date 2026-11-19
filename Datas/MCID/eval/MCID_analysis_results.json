@@ -1,0 +1,41 @@
+{
+    "total_samples": 1745,
+    "class_distribution": {
+        "what_are_treatment_options": 110,
+        "myths": 110,
+        "travel": 110,
+        "news_and_press": 110,
+        "share": 110,
+        "hi": 110,
+        "okay_thanks": 110,
+        "donate": 110,
+        "latest_numbers": 110,
+        "protect_yourself": 110,
+        "what_is_corona": 110,
+        "what_are_symptoms": 110,
+        "how_does_corona_spread": 110,
+        "can_i_get_from_feces_animal_pets": 105,
+        "can_i_get_from_packages_surfaces": 105,
+        "what_if_i_visited_high_risk_area": 105
+    },
+    "gini_index": 0.9374799878490324,
+    "imbalance_ratio": 1.0476190476190477,
+    "class_proportions": {
+        "what_are_treatment_options": 0.06303724928366762,
+        "myths": 0.06303724928366762,
+        "travel": 0.06303724928366762,
+        "news_and_press": 0.06303724928366762,
+        "share": 0.06303724928366762,
+        "hi": 0.06303724928366762,
+        "okay_thanks": 0.06303724928366762,
+        "donate": 0.06303724928366762,
+        "latest_numbers": 0.06303724928366762,
+        "protect_yourself": 0.06303724928366762,
+        "what_is_corona": 0.06303724928366762,
+        "what_are_symptoms": 0.06303724928366762,
+        "how_does_corona_spread": 0.06303724928366762,
+        "can_i_get_from_feces_animal_pets": 0.06017191977077364,
+        "can_i_get_from_packages_surfaces": 0.06017191977077364,
+        "what_if_i_visited_high_risk_area": 0.06017191977077364
+    }
+}

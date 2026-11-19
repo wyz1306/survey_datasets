@@ -1,0 +1,23 @@
+{
+    "total_samples": 13784,
+    "class_distribution": {
+        "AddToPlaylist": 1942,
+        "BookRestaurant": 1973,
+        "GetWeather": 2000,
+        "PlayMusic": 2000,
+        "SearchScreeningEvent": 1959,
+        "SearchCreativeWork": 1954,
+        "RateBook": 1956
+    },
+    "gini_index": 0.8571262209349523,
+    "imbalance_ratio": 1.0298661174047374,
+    "class_proportions": {
+        "AddToPlaylist": 0.14088798607080674,
+        "BookRestaurant": 0.1431369704004643,
+        "GetWeather": 0.14509576320371445,
+        "PlayMusic": 0.14509576320371445,
+        "SearchScreeningEvent": 0.1421213000580383,
+        "SearchCreativeWork": 0.141758560650029,
+        "RateBook": 0.14190365641323274
+    }
+}
