@@ -1,0 +1,8 @@
+# macOS metadata
+.DS_Store
+__MACOSX/
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
