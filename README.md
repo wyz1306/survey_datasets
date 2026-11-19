@@ -48,6 +48,9 @@ that distribution, and the loader header comment records where it was downloaded
 | `SNIPS` | `data/` TSV | `OpenGPTX/illuminer` | Coucke et al. (2018) |
 | `Stackoverflow` | `rawText/` TXT and word vectors | `jacoxu/StackOverflow` | Xu et al. (2015) |
 
+Citations for each dataset paper are collected in [`DATASETS.md`](DATASETS.md), in both APA 7 and
+BibTeX. Cite the original dataset papers rather than this repository.
+
 ## Per-dataset outputs
 
 Each `Datas/<Dataset>/eval/` folder contains five files, reproduced by the scripts in
@@ -144,4 +147,4 @@ recomputed without re-running the loaders. Running a loader again simply overwri
 ## Citation
 
 If you use these files, please cite the accompanying survey together with the original dataset
-papers listed above.
+papers collected in [`DATASETS.md`](DATASETS.md).
